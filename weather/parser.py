@@ -7,6 +7,8 @@ from models.weather_models import (
     HourlyForecastDay
 )
 
+from utils.logger import logger
+
 
 class WeatherParser:
     """
@@ -15,6 +17,8 @@ class WeatherParser:
 
     @staticmethod
     def parse(data: dict) -> WeatherData:
+
+        logger.info("Parsing weather payload into models")
 
         # ------------------------
         # Location
@@ -74,6 +78,8 @@ class WeatherParser:
                 )
             )
 
+            logger.info("Parsed %s forecast days", len(forecast))
+
         # ------------------------
         # Hourly Forecast
         # ------------------------
@@ -105,6 +111,8 @@ class WeatherParser:
                     hours=hours,
                 )
             )
+
+        logger.info("Parsed %s hourly forecast days", len(hourly_forecasts))
 
         # ------------------------
         # Final Object

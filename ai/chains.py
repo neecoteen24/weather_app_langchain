@@ -2,6 +2,7 @@ from ai.llm import get_llm
 from ai.prompts import WEATHER_ADVISOR_PROMPT
 from ai.output_models import WeatherRecommendation
 from models.weather_models import WeatherData
+from utils.logger import logger
 
 
 def format_current_weather(weather: WeatherData) -> str:
@@ -68,6 +69,12 @@ def get_weather_recommendation(weather: WeatherData) -> WeatherRecommendation:
     """
     Generate AI recommendations from weather data.
     """
+
+    logger.info(
+        "Generating recommendation for %s, %s",
+        weather.location.city,
+        weather.location.country,
+    )
 
     llm = get_llm().with_structured_output(
         WeatherRecommendation

@@ -2,6 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from ai.llm import get_llm
 from models.weather_models import WeatherData
+from utils.logger import logger
 
 
 CHAT_PROMPT = ChatPromptTemplate.from_messages(
@@ -114,6 +115,11 @@ def ask_weather_question(
     Answer user questions using the fetched weather data.
     """
 
+    logger.info(
+        "Generating chat answer for %s",
+        weather.location.city,
+    )
+
     llm = get_llm()
 
     chain = CHAT_PROMPT | llm
@@ -126,6 +132,11 @@ def ask_weather_question(
             "hourly_forecast": format_hourly(weather),
             "question": question,
         }
+    )
+
+    logger.info(
+        "Chat answer generated for %s",
+        weather.location.city,
     )
 
     return response.content
