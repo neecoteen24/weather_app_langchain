@@ -1,0 +1,15 @@
+ACTIVITIES = [
+    "Running",
+    "Cycling",
+    "Walking",
+    "Driving",
+    "Office",
+    "College",
+    "Shopping",
+    "Travel",
+    "Photography",
+    "Hiking",
+    "Camping",
+    "Dog Walking",
+    "Gardening",
+]

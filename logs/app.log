@@ -1,0 +1,86 @@
+2026-06-29 14:35:57,443 | INFO | weather_ai | Weather fetch requested mode=geo city= days=2
+2026-06-29 14:35:57,448 | INFO | weather_ai | Calling WeatherAPI with query=30.770482189517647,76.57048504742998
+2026-06-29 14:35:58,486 | INFO | weather_ai | WeatherAPI request successful.
+2026-06-29 14:35:58,489 | INFO | weather_ai | Weather API response received for coordinates=(30.770482189517647, 76.57048504742998)
+2026-06-29 14:35:58,489 | INFO | weather_ai | Parsing weather payload into models
+2026-06-29 14:35:58,490 | INFO | weather_ai | Parsed 1 forecast days
+2026-06-29 14:35:58,490 | INFO | weather_ai | Parsed 2 forecast days
+2026-06-29 14:35:58,491 | INFO | weather_ai | Parsed 2 hourly forecast days
+2026-06-29 14:35:58,491 | INFO | weather_ai | Generating recommendation for Kurali, India
+2026-06-29 14:35:58,497 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-29 14:36:06,102 | INFO | weather_ai | Weather parsed and recommendation generated for mode=geo
+2026-06-29 14:37:26,625 | INFO | weather_ai | Weather question asked for city=Kurali
+2026-06-29 14:37:26,627 | INFO | weather_ai | Generating chat answer for Kurali
+2026-06-29 14:37:26,628 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-29 14:37:34,154 | INFO | weather_ai | Chat answer generated for Kurali
+2026-06-29 14:37:34,160 | INFO | weather_ai | Weather question answered for city=Kurali
+2026-06-29 16:17:31,034 | INFO | weather_ai | Weather fetch requested mode=geo city= days=3
+2026-06-29 16:17:31,036 | ERROR | weather_ai | Weather workflow failed for mode=geo city=
+Traceback (most recent call last):
+  File "C:\Users\monda\warehouse\python\agrenticAI\weather-app\pages\weather_dashboard.py", line 133, in <module>
+    raise ValueError(
+        "Location access is required before fetching weather by current location."
+    )
+ValueError: Location access is required before fetching weather by current location.
+2026-06-29 16:17:45,143 | INFO | weather_ai | Weather fetch requested mode=search city= days=3
+2026-06-29 16:17:45,144 | ERROR | weather_ai | Weather workflow failed for mode=search city=
+Traceback (most recent call last):
+  File "C:\Users\monda\warehouse\python\agrenticAI\weather-app\pages\weather_dashboard.py", line 150, in <module>
+    raise ValueError("Please enter a city name.")
+ValueError: Please enter a city name.
+2026-06-29 16:17:48,717 | INFO | weather_ai | Weather fetch requested mode=geo city= days=3
+2026-06-29 16:17:48,718 | ERROR | weather_ai | Weather workflow failed for mode=geo city=
+Traceback (most recent call last):
+  File "C:\Users\monda\warehouse\python\agrenticAI\weather-app\pages\weather_dashboard.py", line 133, in <module>
+    raise ValueError(
+        "Location access is required before fetching weather by current location."
+    )
+ValueError: Location access is required before fetching weather by current location.
+2026-06-29 16:17:56,076 | INFO | weather_ai | Weather fetch requested mode=geo city= days=3
+2026-06-29 16:17:56,078 | INFO | weather_ai | Calling WeatherAPI with query=30.770487765219265,76.57046969207282
+2026-06-29 16:17:57,076 | INFO | weather_ai | Weather fetch requested mode=geo city= days=3
+2026-06-29 16:17:57,078 | INFO | weather_ai | Calling WeatherAPI with query=30.770487765219265,76.57046969207282
+2026-06-29 16:17:57,146 | INFO | weather_ai | WeatherAPI request successful.
+2026-06-29 16:17:57,149 | INFO | weather_ai | Weather API response received for coordinates=(30.770487765219265, 76.57046969207282)
+2026-06-29 16:17:57,150 | INFO | weather_ai | Parsing weather payload into models
+2026-06-29 16:17:57,150 | INFO | weather_ai | Parsed 1 forecast days
+2026-06-29 16:17:57,151 | INFO | weather_ai | Parsed 2 forecast days
+2026-06-29 16:17:57,151 | INFO | weather_ai | Parsed 3 forecast days
+2026-06-29 16:17:57,152 | INFO | weather_ai | Parsed 3 hourly forecast days
+2026-06-29 16:17:57,152 | INFO | weather_ai | Generating recommendation for Kurali, India
+2026-06-29 16:17:57,152 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-29 16:17:58,025 | INFO | weather_ai | WeatherAPI request successful.
+2026-06-29 16:17:58,029 | INFO | weather_ai | Weather API response received for coordinates=(30.770487765219265, 76.57046969207282)
+2026-06-29 16:17:58,029 | INFO | weather_ai | Parsing weather payload into models
+2026-06-29 16:17:58,030 | INFO | weather_ai | Parsed 1 forecast days
+2026-06-29 16:17:58,030 | INFO | weather_ai | Parsed 2 forecast days
+2026-06-29 16:17:58,030 | INFO | weather_ai | Parsed 3 forecast days
+2026-06-29 16:17:58,031 | INFO | weather_ai | Parsed 3 hourly forecast days
+2026-06-29 16:17:58,032 | INFO | weather_ai | Generating recommendation for Kurali, India
+2026-06-29 16:17:58,032 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-29 16:18:02,928 | INFO | weather_ai | Weather parsed and recommendation generated for mode=geo
+2026-06-29 16:26:57,155 | INFO | weather_ai | Weather fetch requested mode=search city=new delhi days=2
+2026-06-29 16:26:57,156 | INFO | weather_ai | Calling WeatherAPI with query=new delhi
+2026-06-29 16:26:58,086 | INFO | weather_ai | WeatherAPI request successful.
+2026-06-29 16:26:58,089 | INFO | weather_ai | Weather API response received for city=new delhi
+2026-06-29 16:26:58,090 | INFO | weather_ai | Parsing weather payload into models
+2026-06-29 16:26:58,090 | INFO | weather_ai | Parsed 1 forecast days
+2026-06-29 16:26:58,090 | INFO | weather_ai | Parsed 2 forecast days
+2026-06-29 16:26:58,091 | INFO | weather_ai | Parsed 2 hourly forecast days
+2026-06-29 16:26:58,091 | INFO | weather_ai | Generating recommendation for New Delhi, India
+2026-06-29 16:26:58,091 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-29 16:27:03,099 | INFO | weather_ai | Weather parsed and recommendation generated for mode=search
+2026-06-29 16:27:22,308 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-30 10:15:30,531 | INFO | weather_ai | Weather fetch requested mode=geo city= days=3
+2026-06-30 10:15:30,533 | INFO | weather_ai | Calling WeatherAPI with query=30.77050951472988,76.57047081215796
+2026-06-30 10:15:31,597 | INFO | weather_ai | WeatherAPI request successful.
+2026-06-30 10:15:31,601 | INFO | weather_ai | Weather API response received for coordinates=(30.77050951472988, 76.57047081215796)
+2026-06-30 10:15:31,601 | INFO | weather_ai | Parsing weather payload into models
+2026-06-30 10:15:31,602 | INFO | weather_ai | Parsed 1 forecast days
+2026-06-30 10:15:31,602 | INFO | weather_ai | Parsed 2 forecast days
+2026-06-30 10:15:31,602 | INFO | weather_ai | Parsed 3 forecast days
+2026-06-30 10:15:31,603 | INFO | weather_ai | Parsed 3 hourly forecast days
+2026-06-30 10:15:31,604 | INFO | weather_ai | Generating recommendation for Kurali, India
+2026-06-30 10:15:31,604 | INFO | weather_ai | Creating Gemini LLM client
+2026-06-30 10:15:36,855 | INFO | weather_ai | Weather parsed and recommendation generated for mode=geo
+2026-06-30 10:17:25,420 | INFO | weather_ai | Creating Gemini LLM client
